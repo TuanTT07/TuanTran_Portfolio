@@ -58,6 +58,13 @@
             margin-top: 8px;
             display: flex;
             gap: 12px;
+
+            &:nth-child(1) > .icons-list {
+                animation: move-left 30s linear infinite;
+            }
+            &:nth-child(2) > .icons-list {
+                animation: move-right 60s linear infinite;
+            }
         }
 
         & .icons-list {
@@ -111,7 +118,7 @@
             flex: 1;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             gap: 8px;
             margin-top: 8px;
         }
@@ -120,7 +127,7 @@
             position: absolute;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             height: 36px;
             width: 244px;
             border: 1px solid var(--p-100);
